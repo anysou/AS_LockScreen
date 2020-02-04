@@ -23,7 +23,7 @@ android {
             android.applicationVariants.all { variant ->
                 variant.outputs.all { output ->
                     // 自定义输出路径
-                    variant.getPackageApplication().outputDirectory = new File(project.rootDir.absolutePath + File.separator + "outputs")
+                    variant.getPackageApplication().outputDirectory = new File(project.rootDir.absolutePath + File.separator)
                     // 自定义文件
                     def outputFile = output.outputFile
                     if(outputFile !=null && outputFile.name.endsWith('.apk')){
